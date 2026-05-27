@@ -3,3 +3,9 @@ onlyBuiltDependencies:
   - esbuild
   - sharp
   - unrs-resolver
+
+# Force-pin transitive postcss to a patched version (XSS advisory GHSA-qx2v-qp2m-jg93).
+# Next.js bundles its own postcss; this override lifts the resolved version
+# everywhere in the tree without needing a Next.js release.
+overrides:
+  postcss: ^8.5.10
