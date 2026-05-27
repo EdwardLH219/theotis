@@ -1,0 +1,56 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+coverage
+playwright-report
+test-results
+
+# next.js
+.next
+out
+build
+
+# production
+dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# editor
+.idea
+.vscode/*
+!.vscode/settings.json
+
+# obsidian vault config (this folder doubles as a notes vault locally)
+.obsidian/
+
+# claude code local settings
+.claude/
+
+# fetched assets (mirrored from upstream CDN at build)
+public/images/_fetched/
+
+# tests
+playwright/.cache
